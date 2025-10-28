@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - CloudX Gaming Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #27293d);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #2e3047;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 25px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #3c3f58;
+      color: #fff;
+    }
+    input:focus {
+      outline: 2px solid #58a6ff;
+      background: #44486a;
+    }
+    button {
+      background: #58a6ff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 95%;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #4091ff;
+      transform: scale(1.03);
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🎮 CloudX Gaming Hub</h2>
+    <form method="POST" action="/loginAction">
+      <input name="name" placeholder="Username" required><br>
+      <input name="pass" type="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>New here? <a href="/signup">Create Account</a></p>
+  </div>
+</body>
+</html>
